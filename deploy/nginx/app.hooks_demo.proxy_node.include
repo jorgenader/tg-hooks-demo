@@ -1,0 +1,2 @@
+include conf.d/app.hooks_demo.proxy.include;
+proxy_pass http://hooks_demo_node;

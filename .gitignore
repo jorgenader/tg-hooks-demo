@@ -1,0 +1,34 @@
+# Ignore everything in .idea
+.idea
+
+*.mo
+*.pyo
+*.pyc
+.sass-cache/
+npm-debug.log
+yarn-error.log
+node_modules/
+venv/
+.cache/
+
+.data/
+
+hooks_demo/settings/local.py
+hooks_demo/settings/local_test.py
+hooks_demo/db.sqlite3
+hooks_demo/assets/
+
+hooks_demo/.cache
+hooks_demo/.pytest_cache
+hooks_demo/.coverage
+hooks_demo/coverage
+hooks_demo/cover/
+
+# Node Project files
+app/build/
+app/coverage/
+
+# Django env
+hooks_demo/django.env
+
+hooks_demo/docs/_build
