@@ -3,6 +3,8 @@ import '@tg-resources/fetch-runtime';
 import { buildUrlCache, RenderChildren, resolvePath } from 'tg-named-routes';
 
 import App from 'containers/AppShell';
+import ExampleWithClass from 'views/ExampleWithClass';
+import ExampleWithHooks from 'views/ExampleWithHooks';
 import PageNotFound from 'views/PageNotFound';
 
 import { verifyToken } from 'sagas/auth/verifyTokenSaga';
@@ -34,10 +36,10 @@ const NotFoundRoute = {
 const routes = [
     {
         component: App,
-        initial: [
-            verifyToken,
-            fetchUserDetails,
-        ],
+        // initial: [
+        //     verifyToken,
+        //     fetchUserDetails,
+        // ],
         watcher: [
             activateLanguage,
         ],
@@ -47,6 +49,18 @@ const routes = [
                 exact: true,
                 name: 'landing',
                 component: Home,
+            },
+            {
+                path: '/example-classes',
+                exact: true,
+                name: 'example-classes',
+                component: ExampleWithClass,
+            },
+            {
+                path: '/example-hooks',
+                exact: true,
+                name: 'example-hooks',
+                component: ExampleWithHooks,
             },
             {
                 path: '/restricted',

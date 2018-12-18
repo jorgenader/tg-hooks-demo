@@ -8,7 +8,7 @@ import { selectors as appSelectors } from 'ducks/application';
 
 
 const DefaultHeader = ({ activeLanguage, canonical }) => (
-    <Helmet titleTemplate="%s - Hooks Demo" defaultTitle="Hooks Demo">
+    <Helmet>
         <html lang={activeLanguage} />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta charSet="utf-8" />

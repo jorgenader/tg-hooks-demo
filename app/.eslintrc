@@ -1,5 +1,6 @@
 {
     "extends": "react-app",
+    "parser": "babel-eslint",
     "globals": {
         "jest": false,
         "describe": false,
@@ -8,7 +9,7 @@
     },
     "settings": {
         "react": {
-            "version": "16.6"
+            "version": "16.7"
         }
     },
     "rules": {

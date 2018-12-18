@@ -56,6 +56,12 @@ const NavigationBar = ({ user, isAuthenticated }) => {
                     <NavLink tag={Link} to={urlResolve('restricted')}>{gettext('Restricted view')}</NavLink>
                 </NavItem>
                 {devUrls}
+                <NavItem>
+                    <NavLink tag={Link} to={urlResolve('example-classes')}>Example with classes</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink tag={Link} to={urlResolve('example-hooks')}>Example with hooks</NavLink>
+                </NavItem>
             </Nav>
             {authNav}
         </Navbar>
