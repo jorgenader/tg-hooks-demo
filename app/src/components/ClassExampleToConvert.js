@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { LanguageContext } from 'context/Language';
+import { LocaleContext } from 'context/Language';
 import { ThemeContext } from 'context/Theme';
 
 
@@ -70,13 +70,13 @@ export class HookExample extends Component {
                         <div className="mb-2">
                             Window width: {this.state.width}
                         </div>
-                        <LanguageContext.Consumer>
+                        <LocaleContext.Consumer>
                             {(language) => (
                                 <div className="mb-2">
                                     Language: <span className={`flag-icon flag-icon-${language}`} />
                                 </div>
                             )}
-                        </LanguageContext.Consumer>
+                        </LocaleContext.Consumer>
                     </div>
                 )}
             </ThemeContext.Consumer>

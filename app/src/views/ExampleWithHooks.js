@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { HookExample } from 'components/ClassExampleToConvert';
-import { LanguageContext } from 'context/Language';
+import { LocaleContext } from 'context/Language';
 import { ThemeContext } from 'context/Theme';
 
 import { commonClasses } from './commonExample';
@@ -13,9 +13,9 @@ export default () => (
             <ThemeContext.Provider
                 value={`${commonClasses} bg-dark text-white`}
             >
-                <LanguageContext.Provider value="us">
+                <LocaleContext.Provider value="us">
                     <HookExample />
-                </LanguageContext.Provider>
+                </LocaleContext.Provider>
             </ThemeContext.Provider>
         </div>
     </div>

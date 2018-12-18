@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ClassExample } from 'components/ClassExample';
-import { LanguageContext } from 'context/Language';
+import { LocaleContext } from 'context/Language';
 import { ThemeContext } from 'context/Theme';
 
 import { commonClasses } from './commonExample';
@@ -11,9 +11,9 @@ export default () => (
         <ThemeContext.Provider
             value={`${commonClasses} bg-white`}
         >
-            <LanguageContext.Provider value="gb">
+            <LocaleContext.Provider value="gb">
                 <ClassExample />
-            </LanguageContext.Provider>
+            </LocaleContext.Provider>
         </ThemeContext.Provider>
     </div>
 );

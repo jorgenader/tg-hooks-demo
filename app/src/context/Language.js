@@ -1,4 +1,4 @@
 import React from 'react';
 
 
-export const LanguageContext = React.createContext('en');
+export const LocaleContext = React.createContext('en');

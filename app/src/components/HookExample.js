@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import { LanguageContext } from 'context/Language';
+import { LocaleContext } from 'context/Language';
 import { ThemeContext } from 'context/Theme';
 import { useDocumentTitle, useFormFieldState, useWindowWidth } from 'hooks';
 
@@ -8,7 +8,7 @@ import { useDocumentTitle, useFormFieldState, useWindowWidth } from 'hooks';
 export const HookExample = () => {
     const width = useWindowWidth();
     const themeClasses = useContext(ThemeContext);
-    const language = useContext(LanguageContext);
+    const language = useContext(LocaleContext);
     const [firstName, setFirstName] = useFormFieldState('Dorothy');
     const [lastName, setLastName] = useFormFieldState('Gale');
     useDocumentTitle(`${firstName} ${lastName}`);
