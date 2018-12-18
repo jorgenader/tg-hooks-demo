@@ -73,7 +73,7 @@ export class HookExample extends Component {
                         <LocaleContext.Consumer>
                             {(language) => (
                                 <div className="mb-2">
-                                    Language: <span className={`flag-icon flag-icon-${language}`} />
+                                    Locale: <span className={`flag-icon flag-icon-${language}`} />
                                 </div>
                             )}
                         </LocaleContext.Consumer>

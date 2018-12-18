@@ -43,7 +43,7 @@ export const HookExample = () => {
                 Window width: {width}
             </div>
             <div className="mb-2">
-                Language: <span className={`flag-icon flag-icon-${language}`} />
+                Locale: <span className={`flag-icon flag-icon-${language}`} />
             </div>
         </div>
     );

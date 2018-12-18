@@ -13,7 +13,7 @@ export default () => (
             <ThemeContext.Provider
                 value={`${commonClasses} bg-dark text-white`}
             >
-                <LocaleContext.Provider value="us">
+                <LocaleContext.Provider value="gb">
                     <HookExample />
                 </LocaleContext.Provider>
             </ThemeContext.Provider>
