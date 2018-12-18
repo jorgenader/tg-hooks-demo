@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HookExample } from 'components/HookExample';
+import { HookExample } from 'components/ClassExampleToConvert';
 import { LanguageContext } from 'context/Language';
 import { ThemeContext } from 'context/Theme';
 
